@@ -78,3 +78,33 @@ buttons.forEach(button => {
     console.log("next")
     })
 })
+/*================ contact js =================== */
+const btn = document.getElementById('contact-button');
+
+document.getElementById('form')
+    .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_iol3sqq';
+        var params ={
+            from_name : document.getElementById('from_name').value,
+            subject : document.getElementById('subject').value,
+            email_id : document.getElementById('email_id').value,
+            phone_number : document.getElementById('phone_number').value,
+            message : document.getElementById('message').value
+        }
+        console.log(params);
+        
+        emailjs.send(serviceID, templateID, params)
+        .then(() => {
+        btn.value = 'Send Email';
+        alert('Sent!');
+        }, (err) => {
+        btn.value = 'Send Email';
+        alert(JSON.stringify(err));
+
+    });
+});
