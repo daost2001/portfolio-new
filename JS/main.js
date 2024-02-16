@@ -46,7 +46,7 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, heading', {origin: 'top'})
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'button'})
-ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'})
+ScrollReveal().reveal('.home-content h1, .about-img, .carousel', {origin: 'left'})
 ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'})
 
 /*================ typed js =================== */
@@ -75,7 +75,6 @@ buttons.forEach(button => {
 
     slides.children[newIndex].dataset.active = true
     delete activeSlide.dataset.active
-    console.log("next")
     })
 })
 /*================ contact js =================== */
@@ -96,7 +95,6 @@ document.getElementById('form')
             phone_number : document.getElementById('phone_number').value,
             message : document.getElementById('message').value
         }
-        console.log(params);
         
         emailjs.send(serviceID, templateID, params)
         .then(() => {
