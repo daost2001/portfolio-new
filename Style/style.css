@@ -145,8 +145,12 @@ span{
     transition: .5s ease;
 }
 
+
 .btn:hover{
     box-shadow: none;
+    background-color: var(--main-color);
+}
+.btn:focus{
     background-color: var(--main-color);
 }
 .heading{
