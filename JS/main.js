@@ -106,3 +106,41 @@ document.getElementById('form')
 
     });
 });
+function reload(){
+    var container = document.getElementById("photography");
+    var content = container.innerHTML;
+    console.log(container,content)
+    container.innerHTML= content; 
+    console.log("REFRESH")
+};
+$(document).ready(function(){
+    var oldindex;
+    // Function to initialize the carousel
+    function initCarousel() {
+        $('.carousel').carousel({
+            onCycleTo: function(data){
+                oldindex= $(data).index();
+            }
+        });
+    }
+    
+
+    // Initialize the carousel on document ready
+    initCarousel();
+
+    // Reinitialize the carousel on window resize
+    $(window).resize(function(){
+
+        // Destroy the existing carousel instance (optional)
+        $('.carousel').carousel('destroy');
+
+        
+        // Reinitialize the carousel
+        var currentindex = oldindex;
+        initCarousel();
+        $('.carousel').carousel('set', currentindex);
+
+    });
+    
+
+});

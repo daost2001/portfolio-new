@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- FONT-AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <!-- Main CSS-->
+    <!-- MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous"  />
+
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous"  />
+    
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="Style/style.css">
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">emailjs.init('7gAiUVqqTiLtxyUhj')</script>
+   
     <title>Responsive Personal Portfolio</title>
 </head>
 <body>
@@ -67,29 +68,25 @@
     <!-- services Design-->
     <section class="photography" id="photography">
         <h2 class="heading">The <span>Gallery</span></h2>
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev"> &#8656; </button>
-            <button class="carousel-button next" data-carousel-button="next"> &#8658; </button>
-            <ul data-slides>
-                <li class="carousel-slide" data-active>
-                    <img src="img/photo1.JPG" alt="">
-                </li>
-                <li class="carousel-slide">
-                    <img src="img/photo2.JPG" alt="">
-                </li>
-                <li class="carousel-slide">
-                    <img src="img/photo3.jpg" alt="">
-                </li>
-                <li class="carousel-slide">
-                    <img src="img/photo4.JPG" alt="">
-                </li>
-                <li class="carousel-slide">
-                    <img src="img/photo5.jpg" alt="">
-                </li>
-                <li class="carousel-slide">
-                    <img src="img/photo7.jpg" alt="">
-                </li>
-            </ul>
+        <div class="carousel">
+            <a href="#one" class=carousel-item>
+                <img src="img/photo1.JPG" alt="">
+            </a>
+            <a href="#two" class=carousel-item>
+                <img src="img/photo2.JPG" alt="">
+            </a>
+            <a href="#three" class=carousel-item>
+                <img src="img/photo3.JPG" alt="">
+            </a>
+            <a href="#four" class=carousel-item>
+                <img src="img/photo4.JPG" alt="">
+            </a>
+            <a href="#five" class=carousel-item>
+                <img src="img/photo5.JPG" alt="">
+            </a>
+            <a href="#six" class=carousel-item>
+                <img src="img/photo7.JPG" alt="">
+            </a>
         </div>
 
     </section>
@@ -181,19 +178,27 @@
             <input type="submit" value="Send Message" class="btn" id="contact-button">
         </form>
      </section>
-     <!-- Footer Design-->
-     <footer class="footer">
+    <!-- Footer Design-->
+    <footer class="footer">
         <div class="footer-iconTop">
             <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
         </div>
-     </footer>
+    </footer>
 
-     <!-- Scroll JS-->
-     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scroll JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-     <!-- Scroll JS-->
-     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-     <!-- Main JS-->
+    <!-- Typed JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- EMAILJS SCRIPT -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('7gAiUVqqTiLtxyUhj')</script>
+    <!-- JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
+    <!-- Materialize JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous"></script>
+    <!-- Main JS-->
     <script src="JS/main.js"></script>
 </body>
 </html>
