@@ -388,9 +388,6 @@ span{
     .section{
         padding: 10rem 3%;
     }
-    .services{
-        padding: 7rem ;
-    }
     .portfolio{
         padding-bottom: 7rem;
     }
@@ -448,9 +445,6 @@ span{
     .about-img img{
         margin-top: 4rem;
         width: 98vw;
-    }
-    .services h2{
-        margin-bottom: 3rem;
     }
     .portfolio h2{
         margin-bottom: 3rem;

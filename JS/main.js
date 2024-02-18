@@ -45,7 +45,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, heading', {origin: 'top'})
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'button'})
+ScrollReveal().reveal('.home-img, .portfolio-box, .contact form', {origin: 'button'})
 ScrollReveal().reveal('.home-content h1, .about-img, .carousel', {origin: 'left'})
 ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'})
 
